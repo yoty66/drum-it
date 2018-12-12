@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import './index.css';
-import Drum from './Drum.js';
+import Drum from './Components/Drum.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Drum />, document.getElementById('root'));

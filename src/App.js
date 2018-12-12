@@ -1,48 +1,36 @@
-import React, { Component } from 'react';
-import {Alert} from 'react-bootstrap'
-import {Popover} from 'react-bootstrap'
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+import PlayerPanel from './Panels/PlayerPanel.js'
+import EnablePanel from './Panels/EnablePanel.js'
+import pic1 from './pics/1.jpg'
+import pic2 from './pics/1.jpg'
+import pic3 from './pics/1.jpg'
+import pic4 from './pics/1.jpg'
+import pic5 from './pics/1.jpg'
+import pic6 from './pics/1.jpg'
+import pic7 from './pics/1.jpg'
+import pic8 from './pics/1.jpg'
+import pic9 from './pics/1.jpg'
+import pic10 from './pics/1.jpg'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+//required: import 10 sounds
 
-            {/*<Alert bsStyle="warning">*/}
-                {/*<strong>Holy guacamole!</strong> Best check yo self, you're not looking too*/}
-                {/*good.*/}
-            {/*</Alert>;*/}
+const picsArray=[pic1,pic2,pic3,pic4,pic5,pic6,pic7,pic8,pic9,pic10]
+const sounds=["sound 1",'sound 2','sound 3','sound 4','sound 5','sound 6','sound 7','sound 8','sound 9','sound 10']
 
+default export class App extends Component
+{
+constructor(props)
+{
+    super(props)
+    this.handleDisplayArrayUpdate=this.handleDisplayArrayUpdate.bind(this);
 
-                <Popover
-                    id="popover-basic"
-                    placement="right"
-                    positionLeft={500}
-                    positionTop={500}
-                    title="Popover right"
-                >
-                    And here's some <strong>amazing</strong> content. It's very engaging. right?
-                </Popover>
-
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
 }
+render( )
+{
+    let count=0;
+    const mapfunction=(pic)=>
+    {
 
-export default App;
+    }
+}
+}
