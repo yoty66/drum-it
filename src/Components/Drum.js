@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Image} from 'react-bootstrap'
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import {
     Song,
     Sequencer,
@@ -15,6 +16,7 @@ constructor(props)
 {
     super(props)
     this.handlePlayToggle = this.handlePlayToggle.bind(this);
+    // bootstrapUtils.addStyle(Image, 'custom');
 
     this.state = {
         playing: false,
@@ -41,6 +43,8 @@ constructor(props)
 
     return (
         <div>
+
+
             <button
                  onClick={
                       this.handlePlayToggle
@@ -48,8 +52,11 @@ constructor(props)
                 //disabled={true}
                >
                 <Image
+                    // bsStyle="custom"
+                    style={{width: '200px' ,hight:'200px'} }
                     src={this.props.pic}
-                rounded />
+                // rounded
+                />
             </button>
                 <Song playing={this.state.playing}>
                     <Sequencer

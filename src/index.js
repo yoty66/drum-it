@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import './index.css';
 import Drum from './Components/Drum.js';
+import PlayerPanel from './Panels/PlayerPanel.js';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Drum />, document.getElementById('root'));
+ReactDOM.render(<PlayerPanel/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
