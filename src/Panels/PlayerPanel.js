@@ -2,7 +2,7 @@ import Drum from '../Components/Drum.js';
 import React,{Component} from 'react';
 import {Grid,Row,Col} from 'react-bootstrap'
 
-import pic1 from '../pics/1.jpg' //remove later
+import pic1 from '../pics/Bass.png' //remove later
 import kik from '../samples/Bass.wav'//remove later
 
 export  default class PlayerPanel extends Component {

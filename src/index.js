@@ -4,12 +4,13 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import './index.css';
 import Drum from './Components/Drum.js';
 import PlayerPanel from './Panels/PlayerPanel.js';
+import {createStore} from 'redux'
+//import * as serviceWorker from './serviceWorker';
 
-import * as serviceWorker from './serviceWorker';
-
+// const store=createStore();
 ReactDOM.render(<PlayerPanel/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//serviceWorker.unregister();

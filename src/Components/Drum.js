@@ -7,8 +7,8 @@ import {
     Sampler,
 } from 'react-music';
 
-import pic1 from '../pics/1.jpg' //remove later
-import kik from '../samples/Bass.wav'//remove later
+import pic1 from '../pics/Bass.png' //remove later
+import kik from '../samples/Crash.wav'//remove later
 
 export default class Drum extends Component
 {
