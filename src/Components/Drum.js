@@ -1,13 +1,19 @@
 import React,{Component} from 'react';
-import {Image} from 'react-bootstrap'
-import pic1 from '../pics/1.jpg'
+import {Image} from 'react-bootstrap';
+
+import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import {
     Song,
     Sequencer,
     Sampler,
 } from 'react-music';
 
-import kik from '../samples/kick.wav'
+import pic1 from '../pics/Bass.png' //remove later
+import kik from '../samples/Crash.wav'
+import InstrumentsReducer from "../reducers/reducer-picturs&sounds";
+import OrderReducer from "../reducers/reducer-displayOrder";
+
+//remove later
 
 export default class Drum extends Component
 {
@@ -15,6 +21,7 @@ constructor(props)
 {
     super(props)
     this.handlePlayToggle = this.handlePlayToggle.bind(this);
+    // bootstrapUtils.addStyle(Image, 'custom');
 
     this.state = {
         playing: false,
@@ -27,7 +34,6 @@ constructor(props)
         });
 
         !prevState && this.resetPlaying();
-        //this.play=true;
 
     }
 
@@ -41,6 +47,8 @@ constructor(props)
 
     return (
         <div>
+
+
             <button
                  onClick={
                       this.handlePlayToggle
@@ -48,8 +56,11 @@ constructor(props)
                 //disabled={true}
                >
                 <Image
+                    // bsStyle="custom"
+                    style={{width: '200px' ,hight:'200px'} }
                     src={this.props.pic}
-                rounded />
+                // rounded
+                />
             </button>
                 <Song playing={this.state.playing}>
                     <Sequencer
@@ -66,4 +77,8 @@ constructor(props)
     );
 }
 }
+
+
+//Remove this Line in next steps
 Drum.defaultProps={pic:pic1,sound:kik,id:0};
+
