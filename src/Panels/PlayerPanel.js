@@ -11,22 +11,13 @@ import kik from '../samples/Bass.wav'//remove later
     //
     // }
     render(){
-        if (this.props.pictures.length !== this.props.displayArray.length
-            || this.props.sounds.length !== this.props.displayArray.length) //checks that all the props ararys are of same length
-        {
-            alert('wrong number of params')
-        }
-
-
-
-
 
         return(
             <div>
                 <Grid style={{ paddingTop: '50px',width:'800px',hight:'800px'}}>
 
-                    {this.renderRow(true)}
-                    {this.renderRow(false)}
+                    {this.renderRow(1)}
+                    {this.renderRow(2)}
                 </Grid>
             </div>
         );
@@ -36,7 +27,6 @@ import kik from '../samples/Bass.wav'//remove later
 
 
     renderCol=(id)=> {
-        alert(id)
        return(
             <Col md={3}>
                 <Drum {...this.props.instruments
@@ -45,31 +35,19 @@ import kik from '../samples/Bass.wav'//remove later
                     ]
                       } />
             </Col>);
-
-
     };
 
-     renderRow(firstRow)
+     renderRow(rowNum)
      {
-     if(firstRow)
-     {
+         const firstrow=1+(rowNum-1)*4
+
          return(
          <Row className="show-grid">
-             {this.renderCol(1)}
-             {this.renderCol(2)}
-             {this.renderCol(3)}
-             {this.renderCol(4)}
+             {this.renderCol(firstrow)}
+             {this.renderCol(firstrow+1)}
+             {this.renderCol(firstrow+2)}
+             {this.renderCol(firstrow+3)}
          </Row>);
-     }
-     //else
-     return(
-         <Row className="show-grid">
-             {this.renderCol(5)}
-             {this.renderCol(6)}
-             {this.renderCol(7)}
-             {this.renderCol(8)}
-         </Row>);
-
  }
 
 
