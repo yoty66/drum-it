@@ -1,11 +1,11 @@
 import Drum from '../Components/Drum.js';
 import React,{Component} from 'react';
 import {Grid,Row,Col} from 'react-bootstrap'
-
+import {connect} from 'react-redux'
 import pic1 from '../pics/Bass.png' //remove later
 import kik from '../samples/Bass.wav'//remove later
 
-export  default class PlayerPanel extends Component {
+ class PlayerPanel extends Component {
     // constructor(props) {
     //     super(props)
     //
@@ -16,35 +16,69 @@ export  default class PlayerPanel extends Component {
         {
             alert('wrong number of params')
         }
-        const row=(<Row className="show-grid">
-            <Col  md={3}>
-                <Drum class />
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
 
-        </Row>);
+
+
+
+
         return(
             <div>
-                <Grid
-                    style={{ paddingTop: '50px',width:'800px',hight:'800px'}}
-                >
-                    {row}
-                    {row}
+                <Grid style={{ paddingTop: '50px',width:'800px',hight:'800px'}}>
+
+                    {this.renderRow(true)}
+                    {this.renderRow(false)}
                 </Grid>
             </div>
         );
     }
+
+
+
+
+    renderCol=(id)=> {
+        alert(id)
+       return(
+            <Col md={3}>
+                <Drum {...this.props.instruments
+                    [
+                    this.props.order.get(id)
+                    ]
+                      } />
+            </Col>);
+
+
+    };
+
+     renderRow(firstRow)
+     {
+     if(firstRow)
+     {
+         return(
+         <Row className="show-grid">
+             {this.renderCol(1)}
+             {this.renderCol(2)}
+             {this.renderCol(3)}
+             {this.renderCol(4)}
+         </Row>);
+     }
+     //else
+     return(
+         <Row className="show-grid">
+             {this.renderCol(5)}
+             {this.renderCol(6)}
+             {this.renderCol(7)}
+             {this.renderCol(8)}
+         </Row>);
+
+ }
+
+
 }
 
-
+const mapStateToProps=(state)=> (
+{ instruments : state.instruments , order : state.order}
+);
+export default connect(mapStateToProps)(PlayerPanel);
 
 PlayerPanel.defaultProps ={
     displayArray : [true,true,true,true,true,true,true,true,true,true], //Set all drums to appear don't change
