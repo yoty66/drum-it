@@ -10,6 +10,8 @@ import {combinedReducers} from './reducers/reducer-combined.js'
 
 import {createStore} from 'redux'
 import  {Provider} from 'react-redux'
+import DrumEnabler from "./Components/DrumEnabler";
+import EnablePanel from "./Panels/EnablePanel";
 
 
 //import * as serviceWorker from './serviceWorker';
@@ -19,6 +21,8 @@ import  {Provider} from 'react-redux'
 console.log(store);
 ReactDOM.render( <Provider store={store}>
             <PlayerPanel/>
+            {/*<DrumEnabler/>*/}
+            <EnablePanel/>
             </Provider>
     , document.getElementById('root'));
 
