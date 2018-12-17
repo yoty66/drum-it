@@ -19,8 +19,8 @@ import DrumEnabler from "./Components/DrumEnabler";
 
 console.log(store);
 ReactDOM.render( <Provider store={store}>
-            <PlayerPanel/>
-            {/*<DrumEnabler/>*/}
+            {/*<PlayerPanel/>*/}
+            <DrumEnabler/>
             </Provider>
     , document.getElementById('root'));
 
