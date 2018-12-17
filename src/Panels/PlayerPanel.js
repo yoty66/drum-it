@@ -28,25 +28,21 @@ import kik from '../samples/Bass.wav'//remove later
 
     renderCol=(id)=> {
        return(
-            <Col md={3}>
-                <Drum {...this.props.instruments
-                    [
-                    this.props.order.get(id)
-                    ]
-                      } />
+            <Col md={3} lg={3}>
+                <Drum {...this.props.instruments[this.props.order.get(id)]} />
             </Col>);
     };
 
      renderRow(rowNum)
      {
-         const firstrow=1+(rowNum-1)*4
+         const firstCol=1+(rowNum-1)*4
 
          return(
          <Row className="show-grid">
-             {this.renderCol(firstrow)}
-             {this.renderCol(firstrow+1)}
-             {this.renderCol(firstrow+2)}
-             {this.renderCol(firstrow+3)}
+             {this.renderCol(firstCol)}
+             {this.renderCol(firstCol+1)}
+             {this.renderCol(firstCol+2)}
+             {this.renderCol(firstCol+3)}
          </Row>);
  }
 
@@ -58,8 +54,9 @@ const mapStateToProps=(state)=> (
 );
 export default connect(mapStateToProps)(PlayerPanel);
 
-PlayerPanel.defaultProps ={
-    displayArray : [true,true,true,true,true,true,true,true,true,true], //Set all drums to appear don't change
-    pictures:[pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1],//remove later
-    sounds:[kik,kik,kik,kik,kik,kik,kik,kik,kik,kik,]//remove later
-}
+// PlayerPanel.defaultProps ={
+//     displayArray : [true,true,true,true,true,true,true,true,true,true], //Set all drums to appear don't change
+//     pictures:[pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1],//remove later
+//     sounds:[kik,kik,kik,kik,kik,kik,kik,kik,kik,kik,]//remove later
+// }
+

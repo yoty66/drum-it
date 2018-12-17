@@ -57,6 +57,8 @@ constructor(props)
                >
                 <Image
                     // bsStyle="custom"
+                    lgHidden={this.props.x}
+                    mdHidden={this.props.x}
                     style={{width: '200px' ,hight:'200px'} }
                     src={this.props.pic}
                 // rounded
