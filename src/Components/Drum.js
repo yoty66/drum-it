@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import {Image} from 'react-bootstrap'
+import {Image} from 'react-bootstrap';
+
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import {
     Song,
@@ -8,7 +9,11 @@ import {
 } from 'react-music';
 
 import pic1 from '../pics/Bass.png' //remove later
-import kik from '../samples/Crash.wav'//remove later
+import kik from '../samples/Crash.wav'
+import InstrumentsReducer from "../reducers/reducer-picturs&sounds";
+import OrderReducer from "../reducers/reducer-displayOrder";
+
+//remove later
 
 export default class Drum extends Component
 {
@@ -29,7 +34,6 @@ constructor(props)
         });
 
         !prevState && this.resetPlaying();
-        //this.play=true;
 
     }
 
@@ -73,6 +77,7 @@ constructor(props)
     );
 }
 }
+
 
 //Remove this Line in next steps
 Drum.defaultProps={pic:pic1,sound:kik,id:0};

@@ -1,50 +1,62 @@
 import Drum from '../Components/Drum.js';
 import React,{Component} from 'react';
 import {Grid,Row,Col} from 'react-bootstrap'
-
+import {connect} from 'react-redux'
 import pic1 from '../pics/Bass.png' //remove later
 import kik from '../samples/Bass.wav'//remove later
 
-export  default class PlayerPanel extends Component {
+ class PlayerPanel extends Component {
     // constructor(props) {
     //     super(props)
     //
     // }
     render(){
-        if (this.props.pictures.length !== this.props.displayArray.length
-            || this.props.sounds.length !== this.props.displayArray.length) //checks that all the props ararys are of same length
-        {
-            alert('wrong number of params')
-        }
-        const row=(<Row className="show-grid">
-            <Col  md={3}>
-                <Drum class />
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
-            <Col xs={1} md={3}>
-                <Drum/>
-            </Col>
 
-        </Row>);
         return(
             <div>
-                <Grid
-                    style={{ paddingTop: '50px',width:'800px',hight:'800px'}}
-                >
-                    {row}
-                    {row}
+                <Grid style={{ paddingTop: '50px',width:'800px',hight:'800px'}}>
+
+                    {this.renderRow(1)}
+                    {this.renderRow(2)}
                 </Grid>
             </div>
         );
     }
+
+
+
+
+    renderCol=(id)=> {
+       return(
+            <Col md={3}>
+                <Drum {...this.props.instruments
+                    [
+                    this.props.order.get(id)
+                    ]
+                      } />
+            </Col>);
+    };
+
+     renderRow(rowNum)
+     {
+         const firstrow=1+(rowNum-1)*4
+
+         return(
+         <Row className="show-grid">
+             {this.renderCol(firstrow)}
+             {this.renderCol(firstrow+1)}
+             {this.renderCol(firstrow+2)}
+             {this.renderCol(firstrow+3)}
+         </Row>);
+ }
+
+
 }
 
-
+const mapStateToProps=(state)=> (
+{ instruments : state.instruments , order : state.order}
+);
+export default connect(mapStateToProps)(PlayerPanel);
 
 PlayerPanel.defaultProps ={
     displayArray : [true,true,true,true,true,true,true,true,true,true], //Set all drums to appear don't change
