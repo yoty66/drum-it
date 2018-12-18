@@ -1,16 +1,46 @@
-import Drum from '../Components/DrumEnabler.js';
+import Drum from '../Components/Drum.js';
 import React,{Component} from 'react';
+import {Col} from 'react-bootstrap'
+import {connect} from 'react-redux'
+import {renderPanel} from './renderPanelFunctions'
+import {Image} from 'react-bootstrap';
+import disabledPic from '../pics/blank.png'
+import './PlayerPanel.css'
 
 
-import pic1 from '../pics/1.jpg' //remove later
-import kik from '../samples/kick.wav'//remove later
+ class PlayerPanel extends Component {
+    constructor(props) {
+        super(props)
+        this.renderCol=this.renderCol.bind(this);
+    }
 
-export  default class PlayerPanel extends Component{
+    render(){
+
+        return(renderPanel(this.renderCol));
+    }
 
 
+
+    renderCol=(id)=> {
+       return(
+            <Col md={3} lg={3} lgHidden={true} mdHidden={true}>
+                {
+
+                    this.props.display[id]?
+                        (<Drum className="drumPanel" {...this.props.instruments[this.props.order.get(id)]} /> )
+                        :( <Image
+                            // bsStyle="custom"
+                            style={{width: '150px' ,height:'150px'} }
+                            src={disabledPic}
+                            // rounded
+                        />)
+
+                }
+            </Col>);
+    };
 }
-PlayerPanel.defaultProps ={
-    displayArray:[true,true,true,true,true,true,true,true,true,true], //Set all drums to appear don't change
-    pictures:[pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1,pic1],//remove later
-    sounds:[kik,kik,kik,kik,kik,kik,kik,kik,kik,kik,]//remove later
-}
+
+const mapStateToProps=(state)=> (
+{display : state.display ,  instruments : state.instruments , order : state.order}
+);
+export default connect(mapStateToProps)(PlayerPanel);
