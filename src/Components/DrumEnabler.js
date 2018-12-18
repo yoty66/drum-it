@@ -5,9 +5,11 @@ import {clickEnable} from '../actions/all.js'
 import {Thumbnail,Button} from 'react-bootstrap'
 import {Grid,Row,Col} from 'react-bootstrap'
 import Drum from './Drum.js'
+import "./DrumEnabler.css";
 
  class DrumEnabler extends Component
 {
+
 
     constructor(props)
     {
@@ -19,16 +21,37 @@ import Drum from './Drum.js'
     }
 
     render() {
-        const buttonWriting=(enabled)=>{return enabled?'Enabled':'Disabled'}
-        const buttonBSStyle=(enabled)=>{return enabled?'success':'danger'}
+
+        const buttonWriting=(enabled)=>{return enabled? this.props.order.get(id) + ' Enabled':this.props.order.get(id) + " Disabled"}
+        const buttonBSStyle=(enabled)=>{return enabled?'custom':'danger'}
         const id=this.props.id
+
+const customButtonStyle = (
+  <div>
+    <style type="text/css">
+      {`
+    .btn-custom {
+        background-color: black;
+        color: black;
+        width: 50px;
+        height: 20px;
+
+    }
+    `}
+    </style>
+  </div>
+);
+
         const enabled=this.state.enableArray[id]
         return (
             <Row>
                 <Col md={3}>
-               < Thumbnail>
+               <Thumbnail>
+
                    <Drum {...this.props.instruments[this.props.order.get(id)]} />
-                        <h3>{this.props.order.get(id)} <Button onClick={()=>{this.props.clickEnable(this.props.id)}} bsStyle={buttonBSStyle(enabled)}>{buttonWriting(enabled)}</Button></h3>
+                        <Button className = "enableButton" onClick={()=>{this.props.clickEnable(this.props.id)}} bsStyle={buttonBSStyle(enabled)}>
+                        {buttonWriting(enabled)}
+                        </Button>
                     </Thumbnail>
                 </Col>
             </Row>

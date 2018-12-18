@@ -4,7 +4,8 @@ import {Col} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {renderPanel} from './renderPanelFunctions'
 import {Image} from 'react-bootstrap';
-import disabledPic from '../pics/disabled.jpeg'
+import disabledPic from '../pics/blank.png'
+import './PlayerPanel.css'
 
 
  class PlayerPanel extends Component {
@@ -12,6 +13,7 @@ import disabledPic from '../pics/disabled.jpeg'
         super(props)
         this.renderCol=this.renderCol.bind(this);
     }
+
     render(){
 
         return(renderPanel(this.renderCol));
@@ -19,19 +21,20 @@ import disabledPic from '../pics/disabled.jpeg'
 
 
 
-
     renderCol=(id)=> {
        return(
             <Col md={3} lg={3} lgHidden={true} mdHidden={true}>
                 {
+
                     this.props.display[id]?
-                        (<Drum {...this.props.instruments[this.props.order.get(id)]} /> )
+                        (<Drum className="drumPanel" {...this.props.instruments[this.props.order.get(id)]} /> )
                         :( <Image
                             // bsStyle="custom"
-                            style={{width: '150px' ,hight:'150px'} }
+                            style={{width: '150px' ,height:'150px'} }
                             src={disabledPic}
                             // rounded
                         />)
+
                 }
             </Col>);
     };

@@ -6,6 +6,7 @@ import {renderPanel} from './renderPanelFunctions'
 import DrumEnabler from "../Components/DrumEnabler";
 
 
+
 class EnablePanel extends Component {
     constructor(props) {
         super(props)
