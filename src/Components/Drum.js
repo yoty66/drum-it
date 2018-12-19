@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Image} from 'react-bootstrap';
+import './Drum.css';
 
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 import {
@@ -49,15 +50,15 @@ constructor(props)
         <div>
 
 
-            <button
+            <button className="drumButton"
                  onClick={
                       this.handlePlayToggle
                  }
                 //disabled={true}
                >
-                <Image
+                <Image className ="drumPic"
                     // bsStyle="custom"
-                    style={{width: '200px' ,hight:'200px'} }
+                    //style={{width: '150px' ,height:'150px'} }
                     src={this.props.pic}
                 // rounded
                 />
