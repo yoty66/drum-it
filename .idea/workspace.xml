@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef1b78c7-3b69-4c01-93c3-6353887d5a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/drum-it.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Drum.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/DrumEnabler.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Panels/PlayerPanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Panels/renderPanelFunctions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/BigTom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/Crash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/FloorTom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/HiHat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/Ride.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/SmallTom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/Snare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/blank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pics/disabled.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/reducer-displayArray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Drum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Drum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DrumEnabler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DrumEnabler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panels/EnablePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panels/EnablePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/Bass.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/pics/Bass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/BigTom.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/Crash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/FloorTom.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/HiHat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/Ride.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/SmallTom.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pics/Snare.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer-combined.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-picturs&amp;sounds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer-picturs&amp;sounds.js" afterDir="false" />
-    </list>
+    <list default="true" id="ef1b78c7-3b69-4c01-93c3-6353887d5a8d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
     <ignored path=".idea/misc.xml" />
@@ -149,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -167,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -382,7 +346,7 @@
       <workItem from="1544769022366" duration="29435000" />
       <workItem from="1545007895684" duration="9443000" />
       <workItem from="1545223820281" duration="704000" />
-      <workItem from="1545224555860" duration="224000" />
+      <workItem from="1545224555860" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="before breaking">
       <created>1544631183190</created>
@@ -493,7 +457,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47768000" />
+    <option name="totallyTimeSpent" value="47793000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,7 +472,7 @@
     <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24494143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24494143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -523,10 +487,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290653" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840257" visible="true" weight="0.32882413" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49840257" weight="0.32882413" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840257" weight="0.20707597" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159746" side_tool="true" visible="true" weight="0.32882413" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4978701" visible="true" weight="0.20707597" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021299" side_tool="true" visible="true" weight="0.20707597" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290653" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -760,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -794,7 +758,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
