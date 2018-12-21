@@ -21,8 +21,13 @@ import HomePage from "./Panels/HomePage";
 console.log(store);
 ReactDOM.render( <Provider store={store}>
             <HomePage/>
+            <a name="EnablePanel">
             <EnablePanel/>
+            </a>
+
+            <a name="PlayerPanel">
             <PlayerPanel/>
+            </a>
             {/*<DrumEnabler/>*/}
             </Provider>
     , document.getElementById('root'));

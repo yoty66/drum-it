@@ -12,8 +12,8 @@ class HomePage extends Component {
             Drum-it
           </div>
         <h3 className = "about"> Learn to drum in a fun way while customizing your experience! </h3>
-        <button className = "defaultDrumSet"> <b> Use default drum set </b> </button>
-        <button className = "ownDrumSet"> <b> Build your own drum set </b></button>
+        <button className = "defaultDrumSet"> <a href="#PlayerPanel"><b> Use default drum set </b> </a></button>
+        <button className = "ownDrumSet"><a href="#EnablePanel"> <b> Build your own drum set </b></a></button>
 
       </div>
     )
