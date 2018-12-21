@@ -12,7 +12,7 @@ import {createStore} from 'redux'
 import  {Provider} from 'react-redux'
 import DrumEnabler from "./Components/DrumEnabler";
 import EnablePanel from "./Panels/EnablePanel";
-
+import HomePage from "./Panels/HomePage";
 
 //import * as serviceWorker from './serviceWorker';
 
@@ -20,9 +20,10 @@ import EnablePanel from "./Panels/EnablePanel";
 
 console.log(store);
 ReactDOM.render( <Provider store={store}>
+            <HomePage/>
+            <EnablePanel/>
             <PlayerPanel/>
             {/*<DrumEnabler/>*/}
-            <EnablePanel/>
             </Provider>
     , document.getElementById('root'));
 

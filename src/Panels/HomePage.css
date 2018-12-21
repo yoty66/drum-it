@@ -1,0 +1,48 @@
+.homePage {
+  padding: 240px;
+  background-image: url("../pics/HomePage.jpg");
+  position: static;
+  background-position: left bottom, right top;
+  background-repeat: repeat, no-repeat;
+  text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 80px;
+    margin-top: -220px;
+    color: white;
+    font-family: Impact;
+}
+
+.ownDrumSet{
+position: relative;
+height: 50px;
+width: 220px;
+top: 230px;
+left: 40px;
+border-radius: 12px;
+background: white;
+}
+
+.defaultDrumSet{
+position: relative;
+height: 50px;
+width: 220px;
+right: 40px;
+top: 230px;
+border-radius: 12px;
+background: white;
+}
+
+.about{
+position: relative;
+top: 15px;
+font-size: 20px;
+color: white;
+
+}
+
+
+
+

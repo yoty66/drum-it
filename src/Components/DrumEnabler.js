@@ -20,20 +20,24 @@ import "./DrumEnabler.css";
         };
     }
 
+
     render() {
 
         const buttonWriting=(enabled)=>{return enabled? this.props.order.get(id) + ' Enabled':this.props.order.get(id) + " Disabled"}
-        //const buttonBSStyle=(enabled)=>{return enabled?'primary':'default'}
+        const buttonBSStyle=(enabled)=>{return enabled?'info':'default'}
         const id=this.props.id
 
         const enabled=this.state.enableArray[id]
+
         return (
+
             <Row>
                 <Col md={3}>
                <Thumbnail>
 
-                   <Drum {...this.props.instruments[this.props.order.get(id)]} />
-                        <Button className = "enableButton" onClick={()=>{this.props.clickEnable(this.props.id)}} >
+                      <Drum {...this.props.instruments[this.props.order.get(id)]} />
+
+                        <Button className = "enableButton" onClick={()=>this.props.clickEnable(this.props.id)} bsStyle={buttonBSStyle(enabled)}>
                         {buttonWriting(enabled)}
                         </Button>
                     </Thumbnail>
