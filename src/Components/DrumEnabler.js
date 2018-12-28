@@ -6,6 +6,8 @@ import {Thumbnail,Button} from 'react-bootstrap'
 import {Grid,Row,Col} from 'react-bootstrap'
 import Drum from './Drum.js'
 import "./DrumEnabler.css";
+import {bootstrapUtils} from 'react-bootstrap/lib/utils' ;
+
 
  class DrumEnabler extends Component
 {
@@ -23,13 +25,15 @@ import "./DrumEnabler.css";
 
     render() {
 
-        const buttonWriting=(enabled)=>{return enabled? this.props.order.get(id) + ' Enabled':this.props.order.get(id) + " Disabled"}
-        const buttonBSStyle=(enabled)=>{return enabled?'info':'default'}
+        const buttonWriting=(enabled)=>{return enabled? this.props.order.get(id) + ' Enabled' :this.props.order.get(id) + " Disabled"}
+        const buttonBSStyle=(enabled)=>{return enabled?'secondary':'default'}
         const id=this.props.id
 
         const enabled=this.state.enableArray[id]
 
+
         return (
+
 
             <Row>
                 <Col md={3}>
