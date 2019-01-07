@@ -29,7 +29,7 @@ import './PlayerPanel.css'
                         (<Drum className="drumPanel" {...this.props.instruments[this.props.order.get(id)]} /> )
                         :( <Image
                             // bsStyle="custom"
-                            //style={{width: '150px' ,height:'150px'} }
+                            style={{width: '150px' ,height:'150px'} }
                             src={disabledPic}
                             // rounded
                         />)
