@@ -27,6 +27,9 @@ ReactDOM.render( <Provider store={store}>
 
             <a name="PlayerPanel">
             <PlayerPanel/>
+            <br/>
+            <br/>
+
             </a>
             {/*<DrumEnabler/>*/}
             </Provider>

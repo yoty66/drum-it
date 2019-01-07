@@ -20,7 +20,6 @@ import './PlayerPanel.css'
     }
 
 
-
     renderCol=(id)=> {
        return(
             <Col md={3} lg={3} lgHidden={true} mdHidden={true}>
