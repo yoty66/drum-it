@@ -24,10 +24,18 @@ ReactDOM.render( <Provider store={store}>
             <a name="EnablePanel">
             <EnablePanel/>
             </a>
-
+            <br/>
+            <br/>
+            <br/>
             <a name="PlayerPanel">
             <PlayerPanel/>
             </a>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             {/*<DrumEnabler/>*/}
             </Provider>
     , document.getElementById('root'));
