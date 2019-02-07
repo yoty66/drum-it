@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef1b78c7-3b69-4c01-93c3-6353887d5a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ControlPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Drum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Drum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DrumEnabler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DrumEnabler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,7 +37,7 @@
           <entry key="gitignore" value="2" />
           <entry key="iml" value="4" />
           <entry key="jpg" value="7" />
-          <entry key="js" value="73" />
+          <entry key="js" value="74" />
           <entry key="json" value="11" />
           <entry key="lock" value="2" />
           <entry key="map" value="1" />
@@ -56,7 +53,7 @@
           <entry key="IDEA_MODULE" value="4" />
           <entry key="Image" value="11" />
           <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="73" />
+          <entry key="JavaScript" value="74" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SVG" value="4" />
@@ -69,9 +66,9 @@
         <counts>
           <entry key="css" value="22" />
           <entry key="gitignore" value="32" />
-          <entry key="js" value="5882" />
+          <entry key="js" value="5986" />
           <entry key="json" value="2" />
-          <entry key="txt" value="188" />
+          <entry key="txt" value="195" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -79,8 +76,8 @@
         <counts>
           <entry key="CSS" value="22" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="5882" />
-          <entry key="PLAIN_TEXT" value="220" />
+          <entry key="JavaScript" value="5986" />
+          <entry key="PLAIN_TEXT" value="227" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -97,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/ControlPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="49" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -134,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="-281">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -170,24 +167,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#234#297#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#234#297#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -251,13 +248,13 @@
         <option value="$PROJECT_DIR$/src/reducers/reducer-displayArray.js" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/src/Panels/EnablePanel.js" />
         <option value="$PROJECT_DIR$/src/Components/DrumEnabler.js" />
         <option value="$PROJECT_DIR$/src/Components/ControlPanel.js" />
         <option value="$PROJECT_DIR$/src/Panels/PlayerPanel.js" />
         <option value="$PROJECT_DIR$/src/Components/Drum.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -326,7 +323,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549573239761" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549573635885" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -515,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545017598338</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="on work">
+      <created>1549573263407</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1549573263407</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51854000" />
+    <option name="totallyTimeSpent" value="52248000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,7 +621,8 @@
     <MESSAGE value="Added reducer for enabler" />
     <MESSAGE value="finish DrumEnabler" />
     <MESSAGE value="Player Panel works- minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Player Panel works- minor changes" />
+    <MESSAGE value="on work" />
+    <option name="LAST_COMMIT_MESSAGE" value="on work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -844,17 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#234#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Panels/EnablePanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -868,16 +855,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-css-only/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5794" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/ControlPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/DrumEnabler.js">
@@ -900,12 +877,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/ControlPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#234#297#0" expanded="true" />
           </folding>
         </state>
       </provider>

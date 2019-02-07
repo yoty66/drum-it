@@ -36,8 +36,11 @@ constructor(props)
 
         // !prevState==true --> THe drum is now playing
         !prevState && this.resetPlaying();
-        
 
+        if(!prevState && this.props.isPlayer && localStorage.getItem('OnSession'))
+        {
+            console.log((new Date()).getTime()-localStorage.getItem('SessionStartTime'));
+        }
 
     }
 
