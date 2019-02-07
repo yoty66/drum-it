@@ -48,7 +48,7 @@ const customButtonStyle = (
                 <Col md={3}>
                <Thumbnail>
 
-                   <Drum isPlayer={false} {...this.props.instruments[this.props.order.get(id)]} />
+                   <Drum {...this.props.instruments[this.props.order.get(id)]} />
                         <Button className = "enableButton" onClick={()=>{this.props.clickEnable(this.props.id)}} bsStyle={buttonBSStyle(enabled)}>
                         {buttonWriting(enabled)}
                         </Button>
