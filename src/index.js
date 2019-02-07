@@ -6,14 +6,16 @@ import Drum from './Components/Drum.js';
 import PlayerPanel from './Panels/PlayerPanel.js';
 //store
 import {combinedReducers} from './reducers/reducer-combined.js'
-
+import ControlPanel from'./Components/ControlPanel'
 
 import {createStore} from 'redux'
 import  {Provider} from 'react-redux'
 import DrumEnabler from "./Components/DrumEnabler";
 import EnablePanel from "./Panels/EnablePanel";
 
-
+import 'bootstrap-css-only/css/bootstrap-grid.css';
+import 'bootstrap-css-only/css/bootstrap.css';
+import 'bootstrap-css-only/css/bootstrap-reboot.css';
 //import * as serviceWorker from './serviceWorker';
 
  const store=createStore(combinedReducers);
@@ -22,6 +24,7 @@ console.log(store);
 ReactDOM.render( <Provider store={store}>
             <PlayerPanel/>
             {/*<DrumEnabler/>*/}
+        <ControlPanel/>
             <EnablePanel/>
             </Provider>
     , document.getElementById('root'));

@@ -23,7 +23,7 @@ constructor(props)
     super(props)
     this.handlePlayToggle = this.handlePlayToggle.bind(this);
     // bootstrapUtils.addStyle(Image, 'custom');
-
+    this.time=new Date();
     this.state = {
         playing: false,
     };
@@ -34,7 +34,10 @@ constructor(props)
             playing: !this.state.playing,
         });
 
+        // !prevState==true --> THe drum is now playing
         !prevState && this.resetPlaying();
+        
+
 
     }
 

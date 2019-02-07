@@ -27,7 +27,7 @@ import './PlayerPanel.css'
                 {
 
                     this.props.display[id]?
-                        (<Drum className="drumPanel" {...this.props.instruments[this.props.order.get(id)]} /> )
+                        (<Drum className="drumPanel" isPlayer={true} {...this.props.instruments[this.props.order.get(id)]} /> )
                         :( <Image
                             // bsStyle="custom"
                             style={{width: '150px' ,height:'150px'} }
