@@ -8,7 +8,7 @@ class HomePage extends Component {
 
 
       <div className="homePage">
-          <div class="title">
+          <div className="title">
             Drum-it
           </div>
         <h3 className = "about"> Learn to drum in a fun way while customizing your experience! </h3>

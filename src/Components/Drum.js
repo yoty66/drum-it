@@ -1,22 +1,19 @@
 import React,{Component} from 'react';
 import {Image} from 'react-bootstrap';
 import './Drum.css';
-
-import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+import { monitorClick} from '../actions/all'
+import {bindActionCreators} from 'redux';
 import {
     Song,
     Sequencer,
     Sampler,
 } from 'react-music';
 
-import pic1 from '../pics/Bass.png' //remove later
-import kik from '../samples/Crash.wav'
-import InstrumentsReducer from "../reducers/reducer-picturs&sounds";
-import OrderReducer from "../reducers/reducer-displayOrder";
+import connect from "react-redux/es/connect/connect";
 
-//remove later
 
-export default class Drum extends Component
+
+class Drum extends Component
 {
 constructor(props)
 {
@@ -39,7 +36,9 @@ constructor(props)
 
         if(!prevState && this.props.isPlayer && localStorage.getItem('OnSession'))
         {
-            console.log((new Date()).getTime()-localStorage.getItem('SessionStartTime'));
+            const timeStamp=(new Date()).getTime()-localStorage.getItem('SessionStartTime')
+            console.log(timeStamp);
+            this.props.monitorClick(this.props.id,timeStamp)
         }
 
     }
@@ -63,7 +62,7 @@ constructor(props)
                 //disabled={true}
                >
                 <Image className ="drumPic"
-                    // bsStyle="custom"
+
                     //style={{width: '150px' ,height:'150px'} }
                     src={this.props.pic}
                 // rounded
@@ -82,10 +81,15 @@ constructor(props)
                 </Song>
         </div>
     );
+
+
 }
 }
 
+function matchDispatchToProps(dispatch){
+    return bindActionCreators({monitorClick: monitorClick},dispatch);
+}
+export default connect(()=>({}),matchDispatchToProps)(Drum);
 
-//Remove this Line in next steps
-Drum.defaultProps={pic:pic1,sound:kik,id:0};
+
 

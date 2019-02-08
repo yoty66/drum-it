@@ -1,14 +1,12 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux';
-import {clickEnable} from '../actions/all.js'
+import {EndSession} from '../actions/all.js'
 import {ButtonToolbar,Button} from 'react-bootstrap'
-import {Grid,Row,Col} from 'react-bootstrap'
-import Drum from './Drum.js'
-import "./DrumEnabler.css";
-import DrumEnabler from "./DrumEnabler";
 
-export default class ControlPanel extends Component
+import "../Components/DrumEnabler.css";
+
+class ControlPanel extends Component
 {
     constructor(props) {
         super(props)
@@ -27,6 +25,9 @@ export default class ControlPanel extends Component
         localStorage.removeItem('SessionStartTime')
         localStorage.removeItem('OnSession')
         alert('end of session')
+        const sessionRecords=this.props.monitor;
+        console.log('session logs:',sessionRecords);
+        this.props.EndSession();
     }
 
 
@@ -38,4 +39,16 @@ export default class ControlPanel extends Component
             </ButtonToolbar>
         </div>
     )
+
+
 }
+
+
+const mapStateToProps=(state)=> (
+    { monitor : state.monitor}
+);
+
+function matchDispatchToProps(dispatch){
+    return bindActionCreators({EndSession: EndSession}, dispatch);
+}
+export default connect(mapStateToProps,matchDispatchToProps)(ControlPanel);

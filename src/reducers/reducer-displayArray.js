@@ -5,7 +5,6 @@ export default (state=initialState,action)=>
     {
         state[action.payload]=!state[action.payload];
     }
-    console.log(state)
     return state;
 };
 
