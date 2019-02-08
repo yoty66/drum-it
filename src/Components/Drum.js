@@ -13,13 +13,13 @@ import connect from "react-redux/es/connect/connect";
 
 
 
+
 class Drum extends Component
 {
 constructor(props)
 {
     super(props)
     this.handlePlayToggle = this.handlePlayToggle.bind(this);
-    // bootstrapUtils.addStyle(Image, 'custom');
     this.time=new Date();
     this.state = {
         playing: false,
@@ -54,8 +54,12 @@ constructor(props)
     return (
         <div>
 
+            {this.props.monitor[this.props.id] ? "drumButtonGlowing":"drumButton"}
 
-            <button className="drumButton"
+
+
+            <button
+                className={this.props.monitor[this.props.id]?"drumButtonGlowing":"drumButton"}
                  onClick={
                       this.handlePlayToggle
                  }
@@ -68,6 +72,7 @@ constructor(props)
                 // rounded
                 />
             </button>
+
                 <Song playing={this.state.playing}>
                     <Sequencer
                         bars={10}>
@@ -86,10 +91,13 @@ constructor(props)
 }
 }
 
+const mapStateToProps=(state)=> (
+    { monitor : state.monitor}
+);
 function matchDispatchToProps(dispatch){
     return bindActionCreators({monitorClick: monitorClick},dispatch);
 }
-export default connect(()=>({}),matchDispatchToProps)(Drum);
+export default connect(mapStateToProps,matchDispatchToProps)(Drum);
 
 
 

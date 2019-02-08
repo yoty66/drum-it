@@ -31,7 +31,6 @@ import './PlayerPanel.css'
                             // bsStyle="custom"
                             style={{width: '150px' ,height:'150px'} }
                             src={disabledPic}
-                            // rounded
                         />)
 
                 }

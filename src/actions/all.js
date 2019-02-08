@@ -20,9 +20,19 @@ export const monitorClick=(inst_id,timeStamp)=>
 
 export const EndSession=()=>
 {
-    console.log('go there');
+
     return{
         type : 'END_SESSION',
     }
 }
+
+export const IndicateDrum= (inst_id)=>
+{
+    console.log('go there');
+    return{
+        type : 'ENABLE_DISABLE_GLOWING',
+        payload:inst_id
+    }
+}
+
 

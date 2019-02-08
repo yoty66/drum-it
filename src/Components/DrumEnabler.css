@@ -3,10 +3,10 @@
  align-text: center;
  width:165px;
  height:40px;
+ /*-webkit-animation: glowing 1500ms infinite;*/
 
 }
 
 .test{
-
 background:grey;
 }
