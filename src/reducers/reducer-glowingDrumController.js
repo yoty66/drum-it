@@ -1,4 +1,4 @@
-const initialState=[undefined, false, false, false, false, false, false, false,false]
+const initialState=[undefined, false, false, false, false, false, false, false,true]
 export default (state=initialState,action)=>
 {
     if(action.type=='ENABLE_DISABLE_GLOWING')

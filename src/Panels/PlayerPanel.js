@@ -26,7 +26,12 @@ import './PlayerPanel.css'
                 {
 
                     this.props.display[id]?
-                        (<Drum className="drumPanel" isPlayer={true} {...this.props.instruments[this.props.order.get(id)]} id={id} /> )
+                        (<Drum className="drumPanel"
+                               isPlayer={true}
+                               {...this.props.instruments[this.props.order.get(id)]}
+                               id={id}
+                               glowing={this.props.glowing[id]}
+                        /> )
                         :( <Image
                             // bsStyle="custom"
                             style={{width: '150px' ,height:'150px'} }
@@ -39,6 +44,6 @@ import './PlayerPanel.css'
 }
 
 const mapStateToProps=(state)=> (
-{display : state.display ,  instruments : state.instruments , order : state.order}
+{display : state.display ,  instruments : state.instruments , order : state.order ,glowing:state.glowing}
 );
 export default connect(mapStateToProps)(PlayerPanel);

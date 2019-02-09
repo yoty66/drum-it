@@ -7,13 +7,6 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
-.drumButtonGlowing{
-
-border-radius: 10px;
-background-color: white;
-margin-top:30px;
-    -webkit-animation: glowing 1500ms infinite;
-}
 
 
 .drumButton{
@@ -24,6 +17,10 @@ margin-top:30px;
 
 }
 
+.glowing{
+
+    -webkit-animation: glowing 1500ms infinite;
+}
 
 
 @-webkit-keyframes glowing {

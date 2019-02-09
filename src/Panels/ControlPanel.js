@@ -42,7 +42,7 @@ class ControlPanel extends Component
             <ButtonToolbar>
                 <Button onClick={this.StartSession} className = "enableButton" >Start Session</Button>
                 <Button onClick={this.EndSession} className = "enableButton">End Session</Button>
-                <Button onClick={()=>{this.props.IndicateDrum(5)}} className = "enableButton">TEst glow</Button>
+                <Button onClick={()=>{this.props.IndicateDrum(8)}} className = "enableButton">TEst glow</Button>
 
             </ButtonToolbar>
         </div>

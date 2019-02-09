@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Image} from 'react-bootstrap';
+import {Image,Button} from 'react-bootstrap';
 import './Drum.css';
 import { monitorClick} from '../actions/all'
 import {bindActionCreators} from 'redux';
@@ -23,6 +23,7 @@ constructor(props)
     this.time=new Date();
     this.state = {
         playing: false,
+        // glowingArray:this.props.glowing[this.props.id]
     };
 }
     handlePlayToggle() {
@@ -53,23 +54,16 @@ constructor(props)
 
     return (
         <div>
-
-            {this.props.monitor[this.props.id] ? "drumButtonGlowing":"drumButton"}
-
-
-
             <button
-                className={this.props.monitor[this.props.id]?"drumButtonGlowing":"drumButton"}
+
+                className={this.props.glowing?"drumButton glowing":"drumButton"}
                  onClick={
                       this.handlePlayToggle
                  }
-                //disabled={true}
+
                >
                 <Image className ="drumPic"
-
-                    //style={{width: '150px' ,height:'150px'} }
                     src={this.props.pic}
-                // rounded
                 />
             </button>
 
@@ -92,12 +86,14 @@ constructor(props)
 }
 
 const mapStateToProps=(state)=> (
-    { monitor : state.monitor}
+    { monitor : state.monitor
+    }
 );
 function matchDispatchToProps(dispatch){
     return bindActionCreators({monitorClick: monitorClick},dispatch);
 }
 export default connect(mapStateToProps,matchDispatchToProps)(Drum);
+
 
 
 
