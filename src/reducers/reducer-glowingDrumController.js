@@ -1,14 +1,18 @@
-const initialState=[undefined, false, false, false, false, false, false, false,true]
+const initialState=[undefined, false, false, false, false, false, false, false,true];
 export default (state=initialState,action)=>
 {
-    if(action.type=='ENABLE_DISABLE_GLOWING')
+    if(action.type==='ENABLE_GLOWING')
 
     {
-        state[action.payload]=!state[action.payload];
+        state[action.payload]=true;
 
         // if(state[action.payload])
         //     setTimeout(()=>{state[action.payload]=false; console.log(state);}, 1000);
 
+    }
+    if(action.type==='DISABLE_GLOWING')
+    {
+        state[action.payload]=false;
     }
     console.log(state);
     return state;
