@@ -31,6 +31,7 @@ import './PlayerPanel.css'
                                {...this.props.instruments[this.props.order.get(id)]}
                                id={id}
                                glowing={this.props.glowing[id]}
+                               playNow={true}
                         /> )
                         :( <Image
                             // bsStyle="custom"
