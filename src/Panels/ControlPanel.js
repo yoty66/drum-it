@@ -18,6 +18,9 @@ class ControlPanel extends Component {
 
     render = () => {
         const SessionExample=[{id:1,timeStamp:2000},{id:2,timeStamp:2000},{id:3,timeStamp:3000},{id:4,timeStamp:4000}];
+        const tempotest=9;
+        const SessionExample2=SessionExample.map(({id,timeStamp})=>( {id:id, timeStamp:(timeStamp*tempotest) }) )
+        console.log(SessionExample2);
 return(
 <div>
 

@@ -46,7 +46,10 @@ export const SessionControler=
                 this.props.EndSession();
                 return sessionRecords;
             };
-            StopMonitoring();
+           const sessionRecords=StopMonitoring();
+           //need to write:
+           //const diffArray=analyazeResult(sessionRecords)
+            //recommand(diffArray)
             alert('end of session');
 
         };
