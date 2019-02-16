@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef1b78c7-3b69-4c01-93c3-6353887d5a8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/TempoButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/TempoButtonT.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Drum.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Drum.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Panels/ControlPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panels/ControlPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-displayOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer-displayOrder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Panels/PlayerPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/shelf/" />
@@ -20,64 +24,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayArray.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayOrder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="219">
               <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Panels/ControlPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="124">
+              <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Panels/HomePage.js">
+        <entry file="file://$PROJECT_DIR$/src/Panels/PlayerPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-119">
+              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+              <folding>
+                <marker date="1550324423537" expanded="true" signature="517:587" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/reducer-SessionMonitor.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/Drum.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="141">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Panels/renderPanelFunctions.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="7" column="14" lean-forward="true" selection-end-line="100" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/TempoButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/TempoButtonT.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -98,6 +110,9 @@
       <find>imf</find>
       <find>alert</find>
       <find>bsStyle=&quot;custom</find>
+      <find>monitorclick</find>
+      <find>glowing</find>
+      <find>monitor</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules</dir>
@@ -136,15 +151,18 @@
         <option value="$PROJECT_DIR$/src/Components/DrumEnabler.css" />
         <option value="$PROJECT_DIR$/src/reducers/reducer-combined.js" />
         <option value="$PROJECT_DIR$/src/reducers/reducer-displayArray.js" />
-        <option value="$PROJECT_DIR$/src/Components/Drum.css" />
-        <option value="$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js" />
         <option value="$PROJECT_DIR$/src/actions/all.js" />
-        <option value="$PROJECT_DIR$/src/Panels/PlayerPanel.js" />
         <option value="$PROJECT_DIR$/src/Components/Drum.js" />
         <option value="$PROJECT_DIR$/src/utlities/sessionUtilities.js" />
         <option value="$PROJECT_DIR$/src/reducers/reducer-displayOrder.js" />
         <option value="$PROJECT_DIR$/src/Panels/HomePage.js" />
+        <option value="$PROJECT_DIR$/src/Components/TempoButton" />
+        <option value="$PROJECT_DIR$/src/Components/TempoButtonT.js" />
+        <option value="$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js" />
         <option value="$PROJECT_DIR$/src/Panels/ControlPanel.js" />
+        <option value="$PROJECT_DIR$/src/Panels/PlayerPanel.js" />
+        <option value="$PROJECT_DIR$/src/Components/TempoButton.js" />
+        <option value="$PROJECT_DIR$/src/Components/Drum.css" />
       </list>
     </option>
   </component>
@@ -211,6 +229,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="drum-it" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drum-it" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drum-it" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drum-it" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drum-it" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drum-it" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utlities" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,7 +260,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550320476827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550328201865" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -233,15 +269,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pics" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/Components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Panels" />
       <recent name="$PROJECT_DIR$/src/Templates" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\t-sarits\IdeaProjects\drum-it\src\Components" />
+      <recent name="$PROJECT_DIR$/src/pics" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -469,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549724704936</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update lesson 1">
+      <created>1550320499907</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1550320499908</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -488,7 +532,7 @@
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12145749" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23805667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -505,8 +549,8 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4992" weight="0.19934994" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49493334" weight="0.595883" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49392712" visible="true" weight="0.44582593" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5060729" side_tool="true" visible="true" weight="0.44582593" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4923077" visible="true" weight="0.44582593" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50769234" side_tool="true" visible="true" weight="0.44582593" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290653" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -591,36 +635,10 @@
     <MESSAGE value="Can glow to an array.  (IndicateInTime)" />
     <MESSAGE value="-Can glow to an array.  (IndicateInTime)&#10;-fix some warnings" />
     <MESSAGE value="-can support a session" />
-    <option name="LAST_COMMIT_MESSAGE" value="-can support a session" />
+    <MESSAGE value="update lesson 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update lesson 1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-css-only/css/bootstrap-grid.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="63095" selection-start-column="63095" selection-end-column="63095" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap/lib/utils/bootstrapUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-bootstrap/lib/utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-css-only/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="5" column="292" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pics/HiHat.jpg" />
     <entry file="file://$PROJECT_DIR$/src/pics/Snare.jpg" />
     <entry file="file://$PROJECT_DIR$/src/pics/Bass.png">
       <provider selected="true" editor-type-id="images" />
@@ -732,13 +750,6 @@
     <entry file="file://$PROJECT_DIR$/src/Panels/PlayerPanel.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Drum.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utlities/sessionUtilities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -760,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Panels/PlayerPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/reducer-combined.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -778,20 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayOrder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -830,24 +820,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/TempoButton">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="-833">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/TempoButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-displayOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/TempoButton.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer-glowingDrumController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Panels/ControlPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="124">
+          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Panels/PlayerPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <marker date="1550324423537" expanded="true" signature="517:587" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/TempoButtonT.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Drum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" lean-forward="true" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Drum.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/TempoButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
         </state>
       </provider>
     </entry>

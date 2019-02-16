@@ -6,6 +6,7 @@ import {renderPanel} from './renderPanelFunctions'
 import {Image} from 'react-bootstrap';
 import disabledPic from '../pics/blank.png'
 import './PlayerPanel.css'
+import TempoButton from '../Components/TempoButton.js';
 
 
  class PlayerPanel extends Component {
@@ -14,10 +15,21 @@ import './PlayerPanel.css'
         this.renderCol=this.renderCol.bind(this);
     }
 
+//    render(){
+//
+//        return(renderPanel(this.renderCol));
+//    }
+
     render(){
 
-        return(renderPanel(this.renderCol));
-    }
+        return(
+            <div>
+                {renderPanel(this.renderCol)}
+            <TempoButton glowing={this.props.glowing[9]}  />
+            </div>
+        );
+
+    };
 
 
     renderCol=(id)=> {

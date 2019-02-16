@@ -75,8 +75,11 @@ return(
 <ButtonToolbar>
 <Button onClick={() => {this.SessionControler("startSession",SessionExample)} } className = "enableButton" >Start Session</Button>
 <Button onClick={()=>{this.SessionControler("endSession")}} className = "enableButton">End Session</Button>
-<Button className="enableButton" id={9}> Metronome </Button>
 
+<Button onClick={() => {this.SessionControler("startSession",
+    // SessionExample)
+    [{id:9,timeStamp:2000},{id:9,timeStamp:4000}])
+} } className = "enableButton" >Start Tempo</Button>
 
 {/*<Button onClick={() => {*/}
     {/*this.SessionControler(SessionExample)*/}
