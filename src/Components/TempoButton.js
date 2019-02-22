@@ -3,11 +3,7 @@ import {Image} from 'react-bootstrap';
 import './Drum.css';
 import {DisIndicateDrum, monitorClick} from '../actions/all'
 import {bindActionCreators} from 'redux';
-import {
-    Song,
-    Sequencer,
-    Sampler,
-} from 'react-music';
+
 
 import connect from "react-redux/es/connect/connect";
 
@@ -53,34 +49,13 @@ constructor(props)
 
     render() {
 
-    return (
+
+        return (
         <div>
-            <button
-
-                className={this.props.glowing?"drumButton glowing":"drumButton"}
-                 onClick={
-                      this.handlePlayToggle
-                 }
-
-               >
-                <Image className ="drumPic"
-                    src={this.props.pic}
-                />
-            </button>
-
-                <Song playing={this.state.playing}>
-                    <Sequencer
-                        bars={10}>
-                        <Sampler
-                            sample={this.props.sound}
-                            steps={[0]}
-                        />
-
-                    </Sequencer>
-
-                </Song>
+            <button className={this.props.glowing?"tempoButton glowing":"tempoButton"}
+            onClick={this.handlePlayToggle}> Metronome </button>
         </div>
-    );
+            );
 
 
 }

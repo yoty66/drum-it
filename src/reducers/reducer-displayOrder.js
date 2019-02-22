@@ -13,7 +13,7 @@ export default function(){
                 [4,'Ride'],
                 [2,'SmallTom'] ,
                 [6,'Snare']
-            ]
+                ]
         )
 
            // ['','Bass','BigTom','Crash','FloorTom','HiHat','Ride','SmallTom','Snare']

@@ -6,6 +6,7 @@ import {renderPanel} from './renderPanelFunctions'
 import {Image} from 'react-bootstrap';
 import disabledPic from '../pics/blank.png'
 import './PlayerPanel.css'
+import TempoButton from '../Components/TempoButton.js';
 
 
  class PlayerPanel extends Component {
@@ -14,11 +15,21 @@ import './PlayerPanel.css'
         this.renderCol=this.renderCol.bind(this);
     }
 
+//    render(){
+//
+//        return(renderPanel(this.renderCol));
+//    }
+
     render(){
 
-        return(renderPanel(this.renderCol));
-    }
+        return(
+            <div>
+                {renderPanel(this.renderCol)}
+            <TempoButton glowing={this.props.glowing[9]}  />
+            </div>
+        );
 
+    };
 
 
     renderCol=(id)=> {
@@ -27,12 +38,17 @@ import './PlayerPanel.css'
                 {
 
                     this.props.display[id]?
-                        (<Drum className="drumPanel" {...this.props.instruments[this.props.order.get(id)]} /> )
+                        (<Drum className="drumPanel"
+                               isPlayer={true}
+                               {...this.props.instruments[this.props.order.get(id)]}
+                               id={id}
+                               glowing={this.props.glowing[id]}
+                               playNow={true}
+                        /> )
                         :( <Image
                             // bsStyle="custom"
                             style={{width: '150px' ,height:'150px'} }
                             src={disabledPic}
-                            // rounded
                         />)
 
                 }
@@ -41,6 +57,6 @@ import './PlayerPanel.css'
 }
 
 const mapStateToProps=(state)=> (
-{display : state.display ,  instruments : state.instruments , order : state.order}
+{display : state.display ,  instruments : state.instruments , order : state.order ,glowing:state.glowing}
 );
 export default connect(mapStateToProps)(PlayerPanel);

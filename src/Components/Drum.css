@@ -3,11 +3,40 @@
 height:150px;
 width:150px;
 border-radius: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
 }
+
+
 
 .drumButton{
 
-border-radius: 10px;
-background-color: white;
-margin-top:30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top:30px;
+
 }
+
+.tempoButton{
+
+    border-radius: 10px;
+    background-color: white;
+    margin-top:30px;
+    padding: 20px 20px;
+
+}
+
+
+.glowing{
+
+    -webkit-animation: glowing 1500ms infinite;
+}
+
+
+@-webkit-keyframes glowing{
+    0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+

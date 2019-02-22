@@ -1,0 +1,99 @@
+Index: src/reducers/reducer-displayArray.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/reducers/reducer-displayArray.js	(date 1545008746000)
++++ src/reducers/reducer-displayArray.js	(date 1545008746000)
+@@ -0,0 +1,0 @@
+Index: src/Components/DrumEnabler.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// import Drum from './Drum.js';\n// import React,{Component} from 'react';\n// import pic1 from \"../pics/1.jpg\";\n//\n//\n// //Props from App include id & function\n//\n// export default class DrumEnabler extends Component\n// {\n//     constructor(props)\n//     {\n//         super(props)\n//         this.enablerClickHandler=this.enableClickHandler.bind(this)\n//     }\n//     enablerClickHandler()\n//     {\n//\n//     }\n//\n//     render()\n//     {\n// return;\n//     }\n//\n// }\n// Drum.defaultProps={id:1 , handleNewDisableStateApp:\"BOOM BOOM POW\"};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Components/DrumEnabler.js	(revision 0e8045d1dfe968ff4c44931f77ed89ca937ad04c)
++++ src/Components/DrumEnabler.js	(date 1545008392000)
+@@ -1,26 +1,54 @@
+-// import Drum from './Drum.js';
+-// import React,{Component} from 'react';
+-// import pic1 from "../pics/1.jpg";
+-//
+-//
+-// //Props from App include id & function
+-//
+-// export default class DrumEnabler extends Component
+-// {
+-//     constructor(props)
+-//     {
+-//         super(props)
+-//         this.enablerClickHandler=this.enableClickHandler.bind(this)
+-//     }
+-//     enablerClickHandler()
+-//     {
+-//
+-//     }
+-//
+-//     render()
+-//     {
+-// return;
+-//     }
+-//
+-// }
+-// Drum.defaultProps={id:1 , handleNewDisableStateApp:"BOOM BOOM POW"};
+\ No newline at end of file
++import React,{Component} from 'react';
++import {Image} from 'react-bootstrap';
++
++import { bootstrapUtils } from 'react-bootstrap/lib/utils';
++import {
++    Song,
++    Sequencer,
++    Sampler,
++} from 'react-music';
++
++import pic1 from '../pics/Bass.png' //remove later
++import kik from '../samples/Crash.wav'
++import InstrumentsReducer from "../reducers/reducer-picturs&sounds";
++import OrderReducer from "../reducers/reducer-displayOrder";
++
++//remove later
++
++export default class DrumEnabler extends Component
++{
++    constructor(props)
++    {
++        super(props)
++        this.handlePlayToggle = this.handlePlayToggle.bind(this);
++        this.state = {
++            enabled : false,
++        };
++    }
++    handlePlayToggle() {
++        const prevState = this.state.playing;
++        this.setState({
++            enabled: !this.state.playing,
++        });
++
++        !prevState && this.resetPlaying();
++
++    }
++
++    resetPlaying(){
++        setTimeout(()=>this.handlePlayToggle(), 70);
++    }
++
++
++
++    render() {
++
++        return (
++            <div>
++
++            </div>
++        );
++    }
++}
++
++
