@@ -42,7 +42,7 @@ constructor(props)
     }
 
     resetPlaying(){
-        setTimeout(()=>this.handlePlayToggle(), 70);
+        setInterval(()=>this.handlePlayToggle(),100);
     }
 
 

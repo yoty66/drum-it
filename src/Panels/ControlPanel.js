@@ -70,7 +70,7 @@ class ControlPanel extends Component {
              //tempotest=3 -> tempo=90
              //tempotest=4 -> tempo=120
 
-             const tempotest=3;
+             const tempotest=1;
                           const TempoSession =[];
                           var i = 1;
                           while (i < 129) {
