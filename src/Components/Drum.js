@@ -38,7 +38,7 @@ constructor(props)
         if(!prevState && this.props.isPlayer && localStorage.getItem('OnSession'))
         {
             const timeStamp=(new Date()).getTime()-localStorage.getItem('SessionStartTime');
-            console.log(timeStamp);
+            // console.log(timeStamp);
             this.props.monitorClick(this.props.id,timeStamp)
         }
         // this.props.glowing=false;

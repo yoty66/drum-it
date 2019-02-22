@@ -14,7 +14,7 @@ export default (state=initialState,action)=>
     {
         state[action.payload]=false;
     }
-    console.log(state);
+    // console.log(state);
     return state;
 };
 

@@ -43,10 +43,10 @@ export default class DemoButton extends Component{
     {
         return (
             <div>
-                { console.log("got here",this.state.playing)}
+
             {DemoPlayer(this.state.playing)}
         <button onClick={()=>{this.handleClick()}}>
-            {this.state.playing?'Cancel Demo Loop':'Play Demo'}
+            {this.state.playing?'Stop Demo loop':'Play Demo'}
         </button>
                 </div>
     );

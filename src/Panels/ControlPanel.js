@@ -33,31 +33,31 @@ class ControlPanel extends Component {
 
              const SessionBass = SessionExampleBass.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + offset)}));
              const SessionAddBass = SessionExampleBass.concat(SessionBass)
-             console.log(SessionAddBass);
+             // console.log(SessionAddBass);
 
              const SessionSnare1 = SessionExamplePart1.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (2 * offset))}));
              const SessionAddSnare1 = SessionAddBass.concat(SessionSnare1);
-             console.log(SessionAddSnare1);
+             // console.log(SessionAddSnare1);
 
              const SessionSnare2 = SessionExamplePart1.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (3 * offset))}));
              const SessionAddSnare2 = SessionAddSnare1.concat(SessionSnare2);
-             console.log(SessionAddSnare2);
+             // console.log(SessionAddSnare2);
 
              const SessionHH1 = SessionExamplePart2.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (4 * offset))}));
              const SessionAddHH1 = SessionAddSnare2.concat(SessionHH1);
-             console.log(SessionAddHH1);
+             // console.log(SessionAddHH1);
 
              const SessionHH2 = SessionExamplePart2.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (5 * offset))}));
              const SessionAddHH2 = SessionAddHH1.concat(SessionHH2);
-             console.log(SessionAddHH2);
+             // console.log(SessionAddHH2);
 
              const SessionBigTom1 = SessionExamplePart3.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (6 * offset))}));
              const SessionAddBigTom1 = SessionAddHH2.concat(SessionBigTom1);
-             console.log(SessionAddBigTom1);
+             // console.log(SessionAddBigTom1);
 
              const SessionBigTom2 = SessionExamplePart3.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (7 * offset))}));
              const SessionAddBigTom2 = SessionAddBigTom1.concat(SessionBigTom2);
-             console.log(SessionAddBigTom2);
+             // console.log(SessionAddBigTom2);
 
     //         const SessionExPart4 = SessionExamplePart4.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp + (4 * offset))}));
     //         const SessionPart4 = SessionPart3.concat(SessionExPart4);
@@ -80,7 +80,6 @@ class ControlPanel extends Component {
 
              const SessionExample = SessionAddBigTom2.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp/tempotest)}));
              const FinalSession = SessionExample.concat(TempoSession);
-             console.log(SessionExample);
 
 
 

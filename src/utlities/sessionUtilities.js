@@ -8,7 +8,7 @@ export const SessionControler=
         const indicateInTime=
             (SessionArray)=>
             {
-                console.log('got here');
+
                 SessionArray.forEach(({id,timeStamp})=>{ setTimeout(()=>{Indicate(id)},timeStamp)});
                 const Indicate=(drumId)=>{
                     this.props.IndicateDrum(drumId);

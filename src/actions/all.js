@@ -28,7 +28,7 @@ export const EndSession=()=>
 
 export const IndicateDrum= (inst_id)=>
 {
-    console.log('go there');
+
     return{
         type : 'ENABLE_GLOWING',
         payload:inst_id
@@ -37,7 +37,7 @@ export const IndicateDrum= (inst_id)=>
 
 export const DisIndicateDrum= (inst_id)=>
 {
-    console.log('go there');
+
     return{
         type : 'DISABLE_GLOWING',
         payload:inst_id
