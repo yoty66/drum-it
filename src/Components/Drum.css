@@ -33,8 +33,10 @@ padding-bottom: 5px;
 }
 
 
-@-webkit-keyframes glowing {
+@-webkit-keyframes glowing{
     0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
     50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
     100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
 }
+
+

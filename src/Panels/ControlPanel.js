@@ -16,6 +16,7 @@ class ControlPanel extends Component {
 
     }
          render = () => {
+
              const SessionExampleBass= [{id:7,timeStamp:2000},{id:7,timeStamp:18000},{id:7,timeStamp:22000}];
              const SessionExampleSnare= [{id:6,timeStamp:10000},{id:6,timeStamp:26000}];
              const SessionExampleHH= [{id:5,timeStamp:14000},{id:5,timeStamp:16000},{id:5,timeStamp:30000}];
@@ -62,9 +63,22 @@ class ControlPanel extends Component {
     //         console.log(SessionPart4);
 
              //here we adjust the tempo (if necessary)
-             const tempotest=3;
-             const SessionExample = SessionAddBigTom2.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp/tempotest)}));
 
+             //tempotest=1 -> tempo=30
+             //tempotest=2 -> tempo=60
+             //tempotest=3 -> tempo=90
+             //tempotest=4 -> tempo=120
+
+             const tempotest=3;
+                          const TempoSession =[];
+                          var i = 1;
+                          while (i < 129) {
+                          TempoSession.push({id:9, timeStamp:(2000/tempotest) * i});
+                          i ++ ;
+                          }
+
+             const SessionExample = SessionAddBigTom2.map(({id,timeStamp})=>({id:id, timeStamp:(timeStamp/tempotest)}));
+             const FinalSession = SessionExample.concat(TempoSession);
              console.log(SessionExample);
 
 
@@ -73,13 +87,9 @@ return(
 <div>
 
 <ButtonToolbar>
-<Button onClick={() => {this.SessionControler("startSession",SessionExample)} } className = "enableButton" >Start Session</Button>
+<Button onClick={() => {this.SessionControler("startSession",FinalSession)} } className = "enableButton" >Start Session</Button>
 <Button onClick={()=>{this.SessionControler("endSession")}} className = "enableButton">End Session</Button>
 
-<Button onClick={() => {this.SessionControler("startSession",
-    // SessionExample)
-    [{id:9,timeStamp:2000},{id:9,timeStamp:4000}])
-} } className = "enableButton" >Start Tempo</Button>
 
 {/*<Button onClick={() => {*/}
     {/*this.SessionControler(SessionExample)*/}
