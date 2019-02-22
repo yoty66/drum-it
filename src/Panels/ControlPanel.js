@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import {EndSession,IndicateDrum,DisIndicateDrum} from '../actions/all.js'
 import {ButtonToolbar,Button} from 'react-bootstrap'
 import {SessionControler} from '../utlities/sessionUtilities'
+import DemoButton from '../Components/DemoButton'
 
 import "../Components/DrumEnabler.css";
 
@@ -89,6 +90,7 @@ return(
 <ButtonToolbar>
 <Button onClick={() => {this.SessionControler("startSession",FinalSession)} } className = "enableButton" >Start Session</Button>
 <Button onClick={()=>{this.SessionControler("endSession")}} className = "enableButton">End Session</Button>
+    <DemoButton/>
 
 
 {/*<Button onClick={() => {*/}
