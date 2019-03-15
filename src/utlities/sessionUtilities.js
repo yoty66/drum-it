@@ -38,7 +38,7 @@ export const SessionControler=
                 SessionArray.forEach(({id,timeStamp})=>{ setTimeout(()=>{Indicate(id)},timeStamp)});
                 const Indicate=(drumId)=>{
                     this.props.IndicateDrum(drumId);
-                    setInterval(()=>this.props.DisIndicateDrum(drumId),1000);
+                    setTimeout(()=>this.props.DisIndicateDrum(drumId),1000);
 
                 }
             };
