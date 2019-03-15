@@ -49,7 +49,7 @@ export const SessionControler=
         const StartSession=(SessionArray)=> {
             const StartMonitoring=()=> {
                 localStorage.setItem('SessionStartTime', (new Date()).getTime());
-                console.log(localStorage.getItem('SessionStartTime'));
+                // console.log(localStorage.getItem('SessionStartTime'));
                 localStorage.setItem('OnSession', 'True');
             };
             StartMonitoring();
@@ -64,19 +64,22 @@ export const SessionControler=
 
         //
 
-        const EndSession =()=>{
+        const EndSession =(SessionArray)=>{
             const StopMonitoring=()=> {
                 localStorage.removeItem('SessionStartTime');
                 localStorage.removeItem('OnSession');
                 const sessionRecords = this.props.monitor;
-                console.log('session logs:', sessionRecords);
+                console.log('session logs:' , sessionRecords);
+
                 this.props.EndSession();
                 clearTimeouts();
                 clearPresentIndications();
                 return sessionRecords;
             };
            const sessionRecords=StopMonitoring();
-           //need to write:
+            console.log('session array:' , SessionArray);
+
+            //need to write:
            //const diffArray=analyazeResult(sessionRecords)
             //recommand(diffArray)
             alert('end of session');

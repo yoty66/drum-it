@@ -1,5 +1,5 @@
 import React ,{Component} from 'react';
-import sample from '../samples/DemoPlay.m4a';
+import sample from '../samples/DemoPlay.wav';
 import {
     Song,
     Sequencer,

@@ -88,7 +88,7 @@ return(
 
 <ButtonToolbar>
 <Button onClick={() => {this.SessionControler("startSession",FinalSession)} } className = "enableButton" >Start Session</Button>
-<Button onClick={()=>{this.SessionControler("endSession")}} className = "enableButton">End Session</Button>
+<Button onClick={()=>{this.SessionControler("endSession",FinalSession)}} className = "enableButton">End Session</Button>
     <DemoButton/>
 
 
